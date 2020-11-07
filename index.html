@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div>
+        <h1 class="first">First</h1>
+        <h2 style="font-weight: bold;">Second Head</h2>
+        <h6>Third Head</h6>
+
+        <hr>
+        <button onclick="alert('Любое сообщение')">Cool Button</button>
+        
+        <button onclick="count()">Посчитаем</button>
+
+        <p id="text">Нажми на меня</p>
+
+        <script>
+            document.getElementById("text").onclick = function(){
+                myFunction()
+            }
+
+            function myFunction() {
+                document.getElementById("text").innerHTML = "НАЖМИ НА МЕНЯ"
+            }
+
+        </script>
+
+        <input>
+
+        <ol style="font-weight: bold; color: beige; background-color: blue;">
+            <li>
+                great
+            </li>
+            <li>
+                success
+            </li>
+            <li>
+                wonderful
+            </li>
+        </ol>
+    </div>
+    <div class="images">
+        <img style="width: 500px;" src="https://www.meme-arsenal.com/memes/0b8369a32d8c81d64375dbdc8605a446.jpg">
+        <img style="width: 500px;" src="https://www.meme-arsenal.com/memes/0b8369a32d8c81d64375dbdc8605a446.jpg">
+    </div>
+</body>
+</html>
